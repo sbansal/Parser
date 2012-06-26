@@ -1,0 +1,9 @@
+# Context path to install this application on
+app.path=/pdfparser
+
+# Tomcat 6 installation directory
+catalina.home=/usr/local/apache-tomcat-6.0
+
+# Manager webapp username and password
+manager.username=myusername
+manager.password=mypassword

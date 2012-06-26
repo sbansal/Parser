@@ -1,0 +1,2 @@
+1) Make sure to change the build.properties.template file based on your own settings
+2) Also copy all the jersey-archive-1.12 jar files into the WEB-INF/lib folder
