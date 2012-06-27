@@ -17,11 +17,11 @@ public class ClaimsResource {
 	@GET 
 	@Produces (MediaType.APPLICATION_JSON)
 	public Response getClaims(@QueryParam("file") String fileName) {
-		fileName = "/Users/shubhambansal/Downloads/cancer1.pdf";
+		fileName = "/Users/shubhambansal/Downloads/cancer.pdf";
 		try {
 			ParsingController controller = new ParsingController();
 			controller.parse(fileName);
-			ClaimDto claim = new ClaimDto(controller.getClaim().getInsuranceProvider());
+			ClaimDto claim = new ClaimDto(controller.getClaim());
 			return Response.ok(claim).build();
 		} catch (Exception e) {
 			return Response.status(Status.BAD_REQUEST).build();
